@@ -20,19 +20,19 @@ setup-pcf:
 	fi
 
 # Build/synthesize with apio
-build: setup-pcf
+build:
 	uv run apio build $(PROJ_FLAGS)
 
 # Upload to FPGA
-upload: setup-pcf
+upload:
 	uv run apio upload $(PROJ_FLAGS)
 
 # Verify the design
-verify: setup-pcf
+verify:
 	uv run apio verify $(PROJ_FLAGS)
 
 # Simulation
-sim: setup-pcf
+sim:
 	uv run apio sim $(PROJ_FLAGS)
 
 # Clean build files
