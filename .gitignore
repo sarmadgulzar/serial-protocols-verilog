@@ -1,0 +1,4 @@
+.venv
+hardware.*
+*.dblite
+uart
